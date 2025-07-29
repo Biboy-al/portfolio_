@@ -1,0 +1,14 @@
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.skill-container{
+
+    display: flex;
+    width: 80%;
+    justify-content: space-around;
+}
