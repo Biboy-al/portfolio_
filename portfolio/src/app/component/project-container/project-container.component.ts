@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 
 @Component({
   selector: 'app-project-container',
@@ -7,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './project-container.component.scss'
 })
 export class ProjectContainerComponent {
-
+  header = input<string>();
 }

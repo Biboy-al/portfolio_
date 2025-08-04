@@ -1,3 +1,13 @@
+.about{
+
+    color: white;
+    // height:100vh;
+    // width: 100vw;
+    // height: 100%;
+    // background-color: #32CD32;
+}
+
+
 .media{
     display: flex;
     flex-direction: row;
@@ -5,12 +15,6 @@
     gap: 2vh;
     
 }
-
-.about{
-   
-    background-color: green;
-}
-
 
 img{
     width: 25%;
@@ -22,4 +26,8 @@ ul{
     display: flex;
     justify-content: space-between;
     list-style-type: none;
+}
+
+h3{
+    color: #32CD32;
 }

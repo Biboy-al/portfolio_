@@ -5,7 +5,7 @@ import { ProjectContainerComponent } from '../../component/project-container/pro
 
 @Component({
   selector: 'app-home',
-  imports: [AboutMeComponent, SkillsContainerComponent, ProjectContainerComponent],
+  imports: [AboutMeComponent, SkillsContainerComponent, ProjectContainerComponent, SkillsContainerComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

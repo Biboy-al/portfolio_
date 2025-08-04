@@ -1,0 +1,26 @@
+.terminal-container {
+    background-color: #0f111a;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    min-width: 70vw;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    // margin: auto;
+  }
+  
+  .terminal-header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: #aaa;
+    padding-bottom: 0.5rem;
+    font-size: 0.9rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 1rem;
+  }
+  
+  .terminal-body {
+    line-height: 1.6;
+    font-size: 1rem;
+  }
+  

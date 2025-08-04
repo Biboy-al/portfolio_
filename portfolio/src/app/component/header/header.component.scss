@@ -1,6 +1,49 @@
-.header{
+.app-header {
+    position:fixed;
+    width: 100%;       
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
     display: flex;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
-}
+    background-color: #0f0f1a;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  .left-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-box {
+    width: 32px;
+    height: 32px;
+    background-color: #a259ff;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-right: 10px;
+  }
+  
+  .logo-text {
+    font-weight: bold;
+  }
+  
+  .right-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .icon {
+    font-size: 1.2rem;
+  }
+  
+  .time {
+    font-size: 0.9rem;
+  }
+  
