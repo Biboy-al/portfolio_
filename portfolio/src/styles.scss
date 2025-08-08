@@ -1,18 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+$text-green: #39ff14;
 
-html, body { height: 100%; width:100%;}
-body { 
-    margin: 0; 
-    font-family: Roboto, "Helvetica Neue", sans-serif; 
-    background-color: #0f172a; /* Dark blue base */
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+  
+    /* Base dark color */
+    background-color: #0f172a;
+  
+    /* Layered backgrounds: glow + grid */
     background-image: 
+      radial-gradient(circle at 25% 50%, rgba(168, 85, 247, 0.1), transparent 100%),
       linear-gradient(rgba(148, 163, 184, 0.1) 1px, transparent 1px),
       linear-gradient(90deg, rgba(148, 163, 184, 0.1) 1px, transparent 1px);
-    background-size: 50px 50px; /* Adjust grid size */
-    height: 100vh;
+  
+    background-size:
+      100% 100%,   /* glow covers entire screen */
+      50px 50px,   /* horizontal grid */
+      50px 50px;   /* vertical grid */
+  
+    // background-repeat:
+    //   no-repeat,   /* glow appears only once */
+    //   repeat,      /* horizontal grid */
+    //   repeat;      /* vertical grid */
+  
+    // background-position:
+    //   center,      /* glow centered */
+    //   top left,
+    //   top left;
+  
+    // color: white;
+  }
+  
+// body { 
+//     margin: 0; 
+//     font-family: Roboto, "Helvetica Neue", sans-serif; 
+//     background-color: #0f172a; /* Dark blue base */
+//     background-image: 
+//       linear-gradient(rgba(148, 163, 184, 0.1) 1px, transparent 1px),
+//       linear-gradient(90deg, rgba(148, 163, 184, 0.1) 1px, transparent 1px),;
+//     background-size: 50px 50px; /* Adjust grid size */
+//     height: 100vh;
 
-
-}
+// }
 
 h1, h2,h3,p {
     margin: 0;

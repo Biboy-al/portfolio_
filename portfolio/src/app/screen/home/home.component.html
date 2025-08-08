@@ -16,7 +16,7 @@
         total 20 packages
 
         <div class="skills">
-            <app-skills-container skillName="Frontend">
+            <app-skills-container skillName="Frontend" [skills]="['React', 'React Naitve', 'Angular', 'Next.js']" >
             </app-skills-container>
             <app-skills-container skillName="Backend">
 
@@ -24,26 +24,21 @@
             <app-skills-container skillName="Cybersecurity">
 
             </app-skills-container>
-            <app-skills-container skillName="AI">
-
-            </app-skills-container>
+  
+            
         </div>
 
 
     </app-terminal-container>
 
     <app-terminal-container  header="project" cmd="git log --oneline">
-        <app-project-container num="1" projectName="Malware" [skills]="['Rust', 'Python', 'Keylogging']" >
-            Created a Malware keylogger.
-        </app-project-container>
 
-        <app-project-container num="1" projectName="Malware" [skills]="['Angular', 'TypeScript', 'RxJS']" >
-            Created a Malware keylogger.
-        </app-project-container>
+        @for(project of projects; track project){
+            <app-project-container [num]="project.num" [projectName]="project.name" [skills]="project.skills" >
+                {{project.desc}}
+            </app-project-container>
+        }
 
-        <app-project-container num="1" projectName="Malware" [skills]="['Angular', 'TypeScript', 'RxJS']" >
-            Created a Malware keylogger.
-        </app-project-container>
     </app-terminal-container>
 
     <app-terminal-container header="contacts" cmd="./send-message.sh">

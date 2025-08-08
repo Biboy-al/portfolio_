@@ -1,36 +1,51 @@
+@use '../../variables' as vars;
+
 .terminal-container {
-    background-color: #0f111a;
+    // background-color: #0f111a;
     color: #fff;
-    padding: 1.5rem;
     border-radius: 12px;
-    width: 70vw;
+    width: 80vw;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-    gap: 500px;
+    border: 1px solid rgba(139, 92, 246, 0.2);
   }
   
   .terminal-header {
+    position: relative;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
+    height: 25%;
+    background-color: rgba(17, 24, 39, 0.9);
+    border-bottom: 1px solid rgba(139, 92, 246, 0.2);
     color: #aaa;
     padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
     font-size: 0.9rem;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    margin-bottom: 1rem;
+    gap:40%;
+    // border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    // margin-bottom: 1rem;
   }
   
   .terminal-body {
+    background-color: #0f111a;
+    padding: 1.5rem;
     line-height: 1.6;
     font-size: 1rem;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
   }
 
   .host{
-    font-family: 'Courier New', Courier, monospace;
-    color: purple;
+    font-family: vars.$font-terminal;
+    color: vars.$main-purple;
   }
   
   .terminal-cmd{
     display: flex;
+    
   }
   
   .path{
@@ -38,6 +53,15 @@
   }
 
   .cmd{
-    color: green;
+    padding-left: 10px;
+    color: vars.$text-green;
+
+    margin-bottom: 20px;
   }
   
+  .buttons{
+   position: absolute;
+   left: 0;
+   padding-left: 10px;
+  }
+

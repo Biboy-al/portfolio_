@@ -1,0 +1,30 @@
+.window-buttons {
+    display: flex;
+    gap: 8px;
+    border-radius: 12px;
+    width: fit-content;
+  }
+  
+  .button {
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  
+  .close {
+    background-color: #ef4444;
+  }
+  
+  .minimize {
+    background-color: #eab308;
+  }
+  
+  .maximize {
+    background-color: #22c55e;
+  }

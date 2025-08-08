@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
 
 @Component({
@@ -9,4 +9,5 @@ import {MatCardModule} from '@angular/material/card';
 })
 export class SkillsContainerComponent {
   skillName = input<string>();
+  @Input() skills: string[] = [];
 }

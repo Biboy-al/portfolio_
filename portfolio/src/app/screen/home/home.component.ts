@@ -12,5 +12,26 @@ import {MatButtonModule} from '@angular/material/button';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-  skills = ['Angular', 'TypeScript', 'Node.js'];
+
+  skills = [
+    {
+      "name": "Frontend",
+      "skills": []
+    }
+  ]
+
+  projects = [
+    {
+      "num": "1",
+      "name": "Malware",
+      "desc": "This is a bluh bluh bluh",
+      "skills": ['Rust', 'Python', 'Keylogging']
+    },
+    {
+      "num": "2",
+      "name": "Malware",
+      "desc": "",
+      "skills": ['Rust', 'Python', 'Keylogging']
+    }
+  ]
 }

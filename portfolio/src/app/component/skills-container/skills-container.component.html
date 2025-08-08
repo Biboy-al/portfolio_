@@ -1,8 +1,15 @@
 <div class="terminal-container">
   
-    <h2> {{skillName()}}/</h2>
+    <h3> {{skillName()}}/</h3>
   
     <div class="terminal-body">
-      <ng-content></ng-content>
+        <ul>
+            @for(skill of skills; track skill){
+                <li>    
+                    {{skill}}
+                </li>
+            }
+        </ul>
+
     </div>
   </div>

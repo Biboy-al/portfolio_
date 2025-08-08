@@ -1,5 +1,17 @@
+@use "../../../variables" as vars;
+
+h3{
+    color: vars.$main-purple;
+}
+
+:host {
+    display: block;
+    height: 100%;
+  }
+
 .terminal-container {
-    background-color: black;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
     padding: 1.5rem;
     border-radius: 12px;
@@ -20,5 +32,17 @@
   .terminal-body {
     line-height: 1.6;
     font-size: 1rem;
+  }
+
+  li::before{
+    
+    content: "-rw-r--r--";
+    color: vars.$main-blue;
+  }
+
+  ul{
+    list-style: none;
+    padding-left: 0;
+    margin: 0; 
   }
   
