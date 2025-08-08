@@ -3,11 +3,12 @@
 
 .main_div {
     width: 100%;
-    height: 100%;
+    min-height: 100%;
     align-items: center;
     flex-direction: column;
     font-family: 'Inter', sans-serif;
-
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     animation: scrollBG 60s linear infinite;
     overflow: hidden;
 
