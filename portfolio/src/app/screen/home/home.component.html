@@ -7,29 +7,54 @@
         <app-skills-container typeOfSkill="Mobile Dev"></app-skills-container>
     </div> -->
 
+    <app-terminal-container header="About_me" cmd="cat about-me.txt">
+        Hello!! My name is alvien a developer  a rintr
+    </app-terminal-container>
 
-    <app-project-container header="app.txt">
-          
-        
-        
-    </app-project-container>
+    <app-terminal-container header="skills" cmd="ls -la">
 
-    <app-project-container header="skill">
-          
-        
-    </app-project-container>
+        total 20 packages
 
-    <app-project-container header="project">
-          
-        
-    </app-project-container>
+        <div class="skills">
+            <app-skills-container skillName="Frontend">
+            </app-skills-container>
+            <app-skills-container skillName="Backend">
 
-    <app-project-container header="contacts">
-          
-        
+            </app-skills-container>
+            <app-skills-container skillName="Cybersecurity">
 
-    </app-project-container>
+            </app-skills-container>
+            <app-skills-container skillName="AI">
 
+            </app-skills-container>
+        </div>
+
+
+    </app-terminal-container>
+
+    <app-terminal-container  header="project" cmd="git log --oneline">
+        <app-project-container num="0" projectName="Malware" [skills]="['Angular', 'TypeScript', 'RxJS']" >
+            Created a Malware keylogger.
+        </app-project-container>
+    </app-terminal-container>
+
+    <app-terminal-container header="contacts" cmd="./send-message.sh">
+        <div class="contact">
+            <h2>
+                Get In Touch
+            </h2>
+
+            <p>
+                I'm currently open to new opportunities and collaborations. My inbox is always open, so feel free to reach out!
+            </p>
+
+            <button mat-button outlined>
+                Get In Touch
+            </button>
+        </div>
+    </app-terminal-container>
+
+  
 
     
 

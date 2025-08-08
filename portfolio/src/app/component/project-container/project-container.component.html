@@ -1,6 +1,19 @@
 <div class="terminal-container">
-  <div class="terminal-header">~/{{header()}}</div>
-  <div class="terminal-body">
+  <div class="project-header">
+    <h3>
+      {{num()}}
+    </h3>
+
+    <h2> {{projectName()}}</h2>
+  </div>
+  
+  <div class="content">
     <ng-content></ng-content>
+    <div class="skills">
+        @for(skill of skills; track skill){
+          <app-skill-chip skill={{skill}}/>
+        }
+    </div>
+
   </div>
 </div>

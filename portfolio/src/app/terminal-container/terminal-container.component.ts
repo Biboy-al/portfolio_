@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 
 @Component({
   selector: 'app-terminal-container',
@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrl: './terminal-container.component.scss'
 })
 export class TerminalContainerComponent {
-
+  header = input<string>();
+  cmd = input<string>();
 }

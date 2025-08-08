@@ -1,1 +1,21 @@
-<p>terminal-container works!</p>
+<div class="terminal-container">
+    <div class="terminal-header">~/{{header()}}</div>
+    <div class="terminal-body">
+        <div class="terminal-cmd">
+            <div class="host">
+                Visitor&#64;portfolio
+            </div>
+            : 
+            <div class="path">
+                ~
+            </div>
+            %
+            <div class="cmd">
+                {{cmd()}}
+            </div>
+        </div>
+
+     
+      <ng-content></ng-content>
+    </div>
+  </div>

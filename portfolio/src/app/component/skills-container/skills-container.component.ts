@@ -8,5 +8,5 @@ import {MatCardModule} from '@angular/material/card';
   styleUrl: './skills-container.component.scss'
 })
 export class SkillsContainerComponent {
-  typeOfSkill = input<String>();
+  skillName = input<string>();
 }

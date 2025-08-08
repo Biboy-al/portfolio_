@@ -1,9 +1,8 @@
-<mat-card class="skill-card">
-    <mat-card-header>
-        <mat-card-title>
-            {{typeOfSkill()}}
-        </mat-card-title>
-    </mat-card-header>
-</mat-card>
-
-
+<div class="terminal-container">
+  
+    <h2> {{skillName()}}/</h2>
+  
+    <div class="terminal-body">
+      <ng-content></ng-content>
+    </div>
+  </div>
