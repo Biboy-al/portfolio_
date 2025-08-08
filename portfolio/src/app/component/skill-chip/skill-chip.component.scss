@@ -1,6 +1,11 @@
 .chip{
 
-    background-color: rgb(255, 11, 255);
-    border:  solid rgb(34, 12, 34);
-    border-radius: 25px;
+    padding: 1px 4px;
+    border-radius: 20px;
+    background-color: #1f0c3a; /* dark background */
+    border: 1px solid #663399; /* subtle border */
+    color: #d7b9ff; /* light purple text */
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 14px;
 }
+
