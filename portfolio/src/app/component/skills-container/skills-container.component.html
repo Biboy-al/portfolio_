@@ -1,15 +1,17 @@
 <div class="terminal-container">
-  
-    <h3> {{skillName()}}/</h3>
+    <div class="header">
+        <h3> {{skillName()}}/</h3>
+        <p>
+            drwxr-xr-x on items
+        </p>
+    </div>
+
   
     <div class="terminal-body">
-        <ul>
-            @for(skill of skills; track skill){
-                <li>    
-                    {{skill}}
-                </li>
-            }
-        </ul>
-
+        @for(skill of skills; track skill){  
+            <app-skill-card name={{skill.type}} path={{skill.path}}/>
+            
+        }
+       
     </div>
   </div>

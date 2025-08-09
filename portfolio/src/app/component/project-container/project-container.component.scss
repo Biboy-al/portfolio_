@@ -19,8 +19,6 @@ h2{
   gap: 10px;
 }
 
-
- 
   .content {
     display:flex;
     flex-direction: column;
@@ -33,5 +31,12 @@ h2{
 
 .skills{
   display: flex;
+  flex-wrap: wrap;
+  max-width: 45%;
   gap: 0.5rem;
+}
+
+a{
+  color: vars.$font-gray;
+  text-decoration: none;
 }

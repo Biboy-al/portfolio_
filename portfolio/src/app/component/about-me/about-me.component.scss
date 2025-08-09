@@ -1,4 +1,4 @@
-@use "../../../variables" as var;
+@use "../../../variables" as vars;
 
 .about{
     display: flex;
@@ -31,7 +31,7 @@ ul{
 }
 
 h3{
-    color: var.$text-green;
+    color: vars.$text-green;
 }
 
 .typewriter h1 {
@@ -55,4 +55,9 @@ h3{
   @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: orange; }
+  }
+
+  p{
+    font-size: vars.$font-size;
+    color: vars.$font-gray;
   }

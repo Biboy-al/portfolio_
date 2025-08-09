@@ -1,3 +1,5 @@
+@use "../../../variables" as vars;
+
 .app-header {
     position:fixed;
     width: 100%;       
@@ -12,6 +14,7 @@
     background: rgba(15, 15, 16, 0.6);
     backdrop-filter: blur(10px);    
     -webkit-backdrop-filter: blur(10px); 
+    z-index: 1000;
   }
   
   .left-section {
@@ -50,3 +53,6 @@
     font-size: 0.9rem;
   }
   
+.icon{
+  color: vars.$text-green;
+}

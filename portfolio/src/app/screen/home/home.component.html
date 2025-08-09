@@ -13,18 +13,13 @@
 
     <app-terminal-container header="skills" cmd="ls -la">
 
-        total 20 packages
-
         <div class="skills">
-            <app-skills-container skillName="Frontend" [skills]="['React', 'React Naitve', 'Angular', 'Next.js']" >
-            </app-skills-container>
-            <app-skills-container skillName="Backend">
-
-            </app-skills-container>
-            <app-skills-container skillName="Cybersecurity">
-
-            </app-skills-container>
   
+            @for(skill of skills; track skill){
+                <app-skills-container [skillName]="skill.name" [skills]="skill.skills">
+
+                </app-skills-container>
+            }
             
         </div>
 
@@ -34,7 +29,7 @@
     <app-terminal-container  header="project" cmd="git log --oneline">
 
         @for(project of projects; track project){
-            <app-project-container [num]="project.num" [projectName]="project.name" [skills]="project.skills" >
+            <app-project-container [num]="project.num" [projectName]="project.name" [skills]="project.skills" [github_link]="project.github_link" >
                 {{project.desc}}
             </app-project-container>
         }
@@ -42,18 +37,44 @@
     </app-terminal-container>
 
     <app-terminal-container header="contacts" cmd="./send-message.sh">
-        <div class="contact">
-            <h2>
-                Get In Touch
-            </h2>
+        <div class="contact-me">
+            <div>
+                <h2>
+                    Get In Touch
+                </h2>
+    
+                <p>
+                    I'm currently open to new opportunities and collaborations. My inbox is always open, so feel free to reach out!
+                </p>
+            </div>
 
-            <p>
-                I'm currently open to new opportunities and collaborations. My inbox is always open, so feel free to reach out!
-            </p>
+            <div class="contact-info">
 
-            <button mat-button outlined>
-                Get In Touch
-            </button>
+                <div class="con">
+                    <h2>Email</h2>
+                    <h4>Alvien.Salvador&#64;outlook.com</h4>
+                </div>
+
+                <div class="con">
+                    <h2>Address</h2>
+                    <h4>New Zealand, Wellington</h4>
+                </div>
+    
+                <div class="con">
+                    <h2>Social</h2>
+                    <div class="socials">
+                        <a  href="https://github.com/Biboy-al">
+                            <img src="/icons/github-mark-white.png" alt="GitHub logo" width="32" height="32">
+                        </a>
+                        <a href="https://www.linkedin.com/in/alvien-salvador-4a782b277/">
+                            <img src="/icons/LI-In-Bug.png" alt="GitHub logo" width="32" height="32">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
         </div>
     </app-terminal-container>
 

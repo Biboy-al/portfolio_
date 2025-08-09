@@ -4,8 +4,9 @@
       <span class="logo-text">Alvien.dev</span>
     </div>
     <div class="right-section">
-      <i class="icon wifi">📶</i>
-      <i class="icon battery">🔋</i>
-      <span class="time">23:29</span>
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="wifi" class="icon"></mat-icon>
+      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="battery_4_bar_24" class="icon"></mat-icon>
+      <span class="time">{{ currentTime | date: 'MMM d | HH:mm' }}</span>
+
     </div>
   </header>
