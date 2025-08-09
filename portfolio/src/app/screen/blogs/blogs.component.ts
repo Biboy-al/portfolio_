@@ -1,11 +1,26 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { TerminalButtonsComponent } from "../../component/terminal-buttons/terminal-buttons.component";
+import { TerminalContainerComponent } from "../../terminal-container/terminal-container.component";
+import {MatCardModule} from '@angular/material/card';
 
 @Component({
   selector: 'app-blogs',
-  imports: [],
+  imports: [TerminalButtonsComponent, TerminalContainerComponent, MatCardModule],
   templateUrl: './blogs.component.html',
   styleUrl: './blogs.component.scss'
 })
 export class BlogsComponent {
 
+  @Input() blogs: ({name: string, desc:string, post: string})[] = [
+    {
+      "name": "HII",
+      "desc": "This post is about",
+      "post": ""
+    },
+    {
+      "name": "HII",
+      "desc": "This post is about",
+      "post": ""
+    }
+  ];
 }
