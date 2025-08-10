@@ -168,7 +168,7 @@ export class HomeComponent {
         "path": "/icons/skills/tensorflow.webp"
       },
       {
-        "type": "Pytourch",
+        "type": "PyTorch",
         "path": "/icons/skills/pyTorch.png"
       },
       {
@@ -185,7 +185,7 @@ export class HomeComponent {
     {
       "num": "1",
       "name": "Portfolio Website",
-      "desc": "Hey you're here right now!!! ",
+      "desc": "Hey you're here right now!!!",
       "skills": ['Angular', 'SASS', 'Firebase'],
       "github_link": "https://github.com/Biboy-al/Fredo"
     },
