@@ -7,5 +7,5 @@ import { BlogPostComponent } from './screen/blog-post/blog-post.component';
 export const routes: Routes = [
     {path: '', component: HomeComponent},
     {path:'blog', component: BlogsComponent},
-    {path: 'blog/:slog', component:BlogPostComponent}
+    {path: 'blog/:slug', component:BlogPostComponent}
 ];

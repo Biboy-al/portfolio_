@@ -1,21 +1,25 @@
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-
+import { MarkdownModule } from 'ngx-markdown';
+import { TerminalContainerComponent } from "../../terminal-container/terminal-container.component";
 @Component({
   selector: 'app-blog-post',
-  imports: [],
+  imports: [MarkdownModule, TerminalContainerComponent],
   templateUrl: './blog-post.component.html',
   styleUrl: './blog-post.component.scss'
 })
 export class BlogPostComponent {
   content: any;
   
-  constructor(private route: ActivatedRoute, private http: HttpClient) {}
+  slug = '';
 
-//   ngOnInit() {
-//     const slug = this.route.snapshot.paramMap.get('slug');
-//     this.http.get(`assets/posts/${slug}.md`, { responseType: 'text' })
-//       .subscribe(md => this.content = marked(md));
-//   }
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit() {
+    this.slug = this.route.snapshot.paramMap.get('slug') || '';
+
+   
+  }
+
 }
