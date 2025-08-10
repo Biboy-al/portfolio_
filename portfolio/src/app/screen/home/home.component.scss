@@ -3,18 +3,27 @@
 .home{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 50px;
 }
 
+.prog_skill{
+
+    margin-bottom: 10px;
+}
+
 .skills {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
+    grid-template-rows: auto 1fr;           /* 2 rows: first auto height, second fills */
+    gap: 10px;
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap: 1rem;
+    gap: 10px;
 
   }
+
   @media (max-width: 768px) {
     .skills {
         display: flex;

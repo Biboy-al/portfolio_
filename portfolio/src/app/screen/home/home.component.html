@@ -13,6 +13,14 @@
 
     <app-terminal-container header="skills" cmd="ls -la">
 
+        <div class="prog_skill">
+            @for(skill of progSkills; track skill){
+                <app-skills-container [skillName]="skill.name" [skills]="skill.skills">
+
+                </app-skills-container>
+            }
+        </div>
+
         <div class="skills">
   
             @for(skill of skills; track skill){

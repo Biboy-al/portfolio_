@@ -13,18 +13,56 @@ import {MatButtonModule} from '@angular/material/button';
 })
 export class HomeComponent {
 
+  progSkills =[
+    {
+      "name": "Programming Skills",
+      "skills":[
+          {
+            "type": "Typescript",
+            "path": "/icons/skills/JavaScript.png"
+          },
+          {
+            "type": "Javascript",
+            "path": "/icons/skills/ts-logo-128.png"
+          },
+          {
+            "type": "C",
+            "path": "/icons/skills/C_Logo.png"
+          },
+          {
+            "type": "C++",
+            "path": "/icons/skills/C++.png"
+          },
+          {
+            "type": "C#",
+            "path": "/icons/skills/C.png"
+          },
+          {
+            "type": "Java",
+            "path": "/icons/skills/java.png"
+          },
+          {
+            "type": "Python",
+            "path": "/icons/skills/python.png"
+          },
+          {
+            "type": "Rust",
+            "path": "/icons/skills/rust.png"
+          },
+          {
+            "type": "Ruby",
+            "path": "/icons/skills/ruby.png"
+          },
+      ]
+    }
+  ]
+
+
   skills = [
     {
       "name": "Frontend",
       "skills": [
-        {
-          "type": "Typescript",
-          "path": "/icons/skills/JavaScript.png"
-        },
-        {
-          "type": "Javascript",
-          "path": "/icons/skills/ts-logo-128.png"
-        },
+  
         {
           "type": "React",
           "path": "/icons/skills/React-icon.png"
@@ -40,6 +78,10 @@ export class HomeComponent {
         {
           "type": "tailwind",
           "path": "/icons/skills/tailwind.svg"
+        },
+        {
+          "type": "SASS",
+          "path": "/icons/skills/sass.png"
         }
       ]
     },    
@@ -48,7 +90,7 @@ export class HomeComponent {
       "skills": [
         {
           "type": ".Net",
-          "path": "/icons/skills/NET.svg"
+          "path": "/icons/skills/dotnet.png"
         },
         {
           "type": "Node.js",
@@ -72,13 +114,69 @@ export class HomeComponent {
         }
       ]
     },
-    {
-      "name": "cybersecurity",
-      "skills": []
-    },
+    // {
+    //   "name": "cybersecurity",
+    //   "skills": [ {
+    //     "type": ".Net",
+    //     "path": "/icons/skills/NET.svg"
+    //   },
+    //   {
+    //     "type": "Node.js",
+    //     "path": "/icons/skills/jsIconGreen.svg"
+    //   },
+    //   {
+    //     "type": "Flask",
+    //     "path": "/icons/skills/React-icon.png"
+    //   },
+    //   {
+    //     "type": "ASP.NET",
+    //     "path": "/icons/skills/NET.svg"
+    //   },
+    //   {
+    //     "type": "PostgresSQL",
+    //     "path": "/icons/skills/postgres.png"
+    //   },
+    //   {
+    //     "type": "MongoDB",
+    //     "path": "/icons/skills/MongoDB.svg"
+    //   }]
+    // },
     {
       "name": "Tools",
-      "skills": []
+      "skills": [  
+        {
+        "type": "Git",
+        "path": "/icons/skills/git.png"
+      },
+      {
+        "type": "Docker",
+        "path": "/icons/skills/docker.png"
+      },
+      {
+        "type": "AWS",
+        "path": "/icons/skills/aws.png"
+      },
+    
+    ]
+    },
+
+    {
+      "name": "AI & Machine Learning",
+      "skills": [  
+        {
+        "type": "Tensorflow",
+        "path": "/icons/skills/tensorflow.webp"
+      },
+      {
+        "type": "Pytourch",
+        "path": "/icons/skills/pyTorch.png"
+      },
+      {
+        "type": "scikit-learn",
+        "path": "/icons/skills/sci.png"
+      },
+    
+    ]
     }
 
   ]
@@ -86,6 +184,13 @@ export class HomeComponent {
   projects = [
     {
       "num": "1",
+      "name": "Portfolio Website",
+      "desc": "Hey you're here right now!!! ",
+      "skills": ['Angular', 'SASS', 'Firebase'],
+      "github_link": "https://github.com/Biboy-al/Fredo"
+    },
+    {
+      "num": "2",
       "name": "Fredo",
       "desc": "This is a keylogger malware written in rust. ",
       "skills": ['Rust', 'Python', 'Keylogging', 'Python', 'Flask'],
@@ -93,7 +198,7 @@ export class HomeComponent {
     },
 
     {
-      "num": "2",
+      "num": "3",
       "name": "Malware",
       "desc": "",
       "skills": ['Rust', 'Python', 'Keylogging'],
