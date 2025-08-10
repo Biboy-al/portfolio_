@@ -12,16 +12,16 @@ import { RouterLink } from '@angular/router';
 })
 export class BlogsComponent {
 
-  @Input() blogs: ({name: string, desc:string, post: string})[] = [
+  @Input() blogs: ({name: string, desc:string, path: string})[] = [
     {
       "name": "HII",
       "desc": "This post is about",
-      "post": ""
+      "path": "hii"
     },
     {
       "name": "HII",
       "desc": "This post is about",
-      "post": ""
+      "path": ""
     }
   ];
 }
