@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './component/header/header.component';
 import { HomeComponent } from './screen/home/home.component';
+import { MarkdownModule } from 'ngx-markdown';
 
 @Component({
   selector: 'app-root',
