@@ -1,14 +1,15 @@
 @use "../../../variables" as vars;
 
-mat-card{
-    width: 45%;
-    background-color: vars.$bg-gray-skillCard;
-    border: 1px solid rgba(139, 92, 246, 0.2);
-}
-
 .blogs{
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     flex-direction: row;
     gap: 20px;
+}
+
+
+button{
+    color: vars.$text-green;
 }

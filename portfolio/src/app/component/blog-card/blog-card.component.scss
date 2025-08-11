@@ -1,0 +1,17 @@
+@use "../../../variables" as vars;
+
+
+
+mat-card{
+    width: 35vw;
+    background-color: vars.$bg-gray-dark;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+mat-card-header{
+    color: vars.$main-purple;
+}
+
+mat-card-subtitle{
+    color: vars.$font-gray;
+}

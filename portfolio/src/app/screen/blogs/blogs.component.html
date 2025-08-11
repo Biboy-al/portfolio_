@@ -2,24 +2,9 @@
     <div class="blogs">
         @for (blog of blogs; track blogs) {
 
-            <mat-card>
-                <mat-card-header>
-                <mat-card-title>
-                    {{blog.name}}
-                </mat-card-title>
-                    
-                </mat-card-header>
-    
-                <mat-card-content>
-                    {{blog.desc}}
-                </mat-card-content>
-                <mat-card-content>
-                    <mat-card-actions>
-                        <button mat-raised-button [routerLink]="['/blog',blog.path]" routerLinkActive="router-link-active"  >Go to Post</button>
-                    </mat-card-actions>
-                </mat-card-content>
-                
-            </mat-card>
+            <app-blog-card [blog]=blog>
+
+            </app-blog-card>
                 
             
         }

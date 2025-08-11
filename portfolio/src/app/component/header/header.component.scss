@@ -56,3 +56,16 @@
 .icon{
   color: vars.$text-green;
 }
+
+@media (max-width: 768px) {
+
+  .icons{
+    display: none;
+  }
+
+}
+
+.router-link {
+  background-color: black;
+
+}

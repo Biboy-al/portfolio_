@@ -2,15 +2,21 @@
     <div class="left-section">
       <div class="logo-box">A</div>
       <span class="logo-text">Alvien.dev</span>
-      <button mat-raised-button [routerLink]="['']" routerLinkActive="router-link-active">
+
+  
+
+      <button mat-button [routerLink]="['']" routerLinkActive="router-link">
         Home   
       </button>
-      <button mat-raised-button [routerLink]="['blog']" routerLinkActive="router-link-active">Blogs</button>
+      <button mat-button [routerLink]="['blog']" routerLinkActive="router-link">Blogs</button>
     </div>
 
     <div class="right-section">
-      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="wifi" class="icon"></mat-icon>
-      <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="battery_4_bar_24" class="icon"></mat-icon>
+      <div class="icons">
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="wifi" class="icon"></mat-icon>
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="battery_4_bar_24" class="icon"></mat-icon>
+      </div>
+
       <span class="time">{{ currentTime | date: 'MMM d | HH:mm' }}</span>
 
     </div>

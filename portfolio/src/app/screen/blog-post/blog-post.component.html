@@ -1,5 +1,9 @@
 
-<app-terminal-container>
+
+<h2>
+    back to all posts
+</h2>
+<app-terminal-container cmd="cat {{slug}}.txt" header="blogs">
 
     <markdown [src]="'posts/' + slug + '.md'">
 
