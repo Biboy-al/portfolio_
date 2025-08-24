@@ -1,14 +1,19 @@
 <div class="home">
     <app-about-me/>
 
-    <!-- <div class="skill-container">
-        <app-skills-container typeOfSkill="Front Dev"></app-skills-container>
-        <app-skills-container typeOfSkill="Back Dev"></app-skills-container>
-        <app-skills-container typeOfSkill="Mobile Dev"></app-skills-container>
-    </div> -->
-
     <app-terminal-container header="About_me" cmd="cat about-me.txt">
-        Hello!! My name is alvien a developer  a rintr
+        Hello! I'm Alvien Salvador, a Computer Science student at Victoria University of Wellington and a software developer at Rintr. Welcome to my portfolio!
+        <br/><br/>
+        Why the terminal theme? To me, the terminal is like a blank canvas, an open space where developers can build anything they imagine. This site is my own space to share projects, skills, and experiences.
+        <br/><br/>
+        I focus on web development, both front-end and back-end, with growing interests in cloud computing, DevOps, and machine learning.
+        <br/><br/>
+        Outside of tech, I love movies and diving into history.
+        <br/><br/>
+        Feel free to reach out if you have questions or just want to say hi!
+        <br/>
+        Cheers!
+        
     </app-terminal-container>
 
     <app-terminal-container header="skills" cmd="ls -la">
@@ -46,43 +51,22 @@
 
     <app-terminal-container header="contacts" cmd="./send-message.sh">
         <div class="contact-me">
-            <div>
-                <h2>
-                    Get In Touch
-                </h2>
+            <h2>
+               Get In Touch
+            </h2>
     
-                <p>
-                    I'm currently open to new opportunities and collaborations. My inbox is always open, so feel free to reach out!
-                </p>
-            </div>
+            <p>
+                I'm currently open to new opportunities and collaborations. My inbox is always open, so feel free to reach out!
+            </p>
 
-            <div class="contact-info">
+            <div class="contact-cards">
 
-                <div class="con">
-                    <h2>Email</h2>
-                    <h4>Alvien.Salvador&#64;outlook.com</h4>
-                </div>
-
-                <div class="con">
-                    <h2>Address</h2>
-                    <h4>New Zealand, Wellington</h4>
-                </div>
-    
-                <div class="con">
-                    <h2>Socials</h2>
-                    <div class="socials">
-                        <a  href="https://github.com/Biboy-al">
-                            <img src="/icons/github-mark-white.png" alt="GitHub logo" width="32" height="32">
-                        </a>
-                        <a href="https://www.linkedin.com/in/alvien-salvador-4a782b277/">
-                            <img src="/icons/LI-In-Bug.png" alt="GitHub logo" width="32" height="32">
-                        </a>
-                    </div>
-                </div>
+                <app-contact-card contact="Alvien.Salvador@outlook.com" icon="contact/email.png" link="mailto:Alvien.Salvador@outlook.com"/>
+                <app-contact-card contact="linkedin" icon="contact/linkedin.png" link="https://www.linkedin.com/in/alvien-salvador-4a782b277/"/>
+                <app-contact-card contact="Github" icon="contact/github.png" link="https://github.com/Biboy-al"/>
+      
 
             </div>
-
-
         </div>
     </app-terminal-container>
 

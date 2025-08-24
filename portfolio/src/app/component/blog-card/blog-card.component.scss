@@ -14,4 +14,22 @@ mat-card-header{
 
 mat-card-subtitle{
     color: vars.$font-gray;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+mat-card-content{
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    color: vars.$text-green;
+    text-decoration: none;
+}
+
+a:hover{
+    color: vars.$text-dark-green;
+    text-decoration: none;
 }

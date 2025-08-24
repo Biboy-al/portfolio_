@@ -1,10 +1,10 @@
 
 
-<h2>
-    back to all posts
-</h2>
 <app-terminal-container cmd="cat {{slug}}.txt" header="blogs">
-
+    <a [routerLink]="['..']" routerLinkActive="router-link" class="back_button">
+        <!-- <mat-icon fontIcon="arrow"></mat-icon> -->
+        back to all posts
+    </a>
     <markdown [src]="'posts/' + slug + '.md'">
 
     </markdown>

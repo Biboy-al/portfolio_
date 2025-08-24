@@ -4,10 +4,11 @@ import { SkillsContainerComponent } from '../../component/skills-container/skill
 import { ProjectContainerComponent } from '../../component/project-container/project-container.component';
 import { TerminalContainerComponent } from '../../terminal-container/terminal-container.component';
 import {MatButtonModule} from '@angular/material/button';
+import { ContactCardComponent } from "../../component/contact-card/contact-card.component";
 
 @Component({
   selector: 'app-home',
-  imports: [AboutMeComponent, SkillsContainerComponent, ProjectContainerComponent, SkillsContainerComponent, TerminalContainerComponent, MatButtonModule],
+  imports: [AboutMeComponent, SkillsContainerComponent, ProjectContainerComponent, SkillsContainerComponent, TerminalContainerComponent, MatButtonModule, ContactCardComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
@@ -98,7 +99,7 @@ export class HomeComponent {
         },
         {
           "type": "Flask",
-          "path": "/icons/skills/React-icon.png"
+          "path": "/icons/skills/python.png"
         },
         {
           "type": "ASP.NET",
@@ -114,33 +115,7 @@ export class HomeComponent {
         }
       ]
     },
-    // {
-    //   "name": "cybersecurity",
-    //   "skills": [ {
-    //     "type": ".Net",
-    //     "path": "/icons/skills/NET.svg"
-    //   },
-    //   {
-    //     "type": "Node.js",
-    //     "path": "/icons/skills/jsIconGreen.svg"
-    //   },
-    //   {
-    //     "type": "Flask",
-    //     "path": "/icons/skills/React-icon.png"
-    //   },
-    //   {
-    //     "type": "ASP.NET",
-    //     "path": "/icons/skills/NET.svg"
-    //   },
-    //   {
-    //     "type": "PostgresSQL",
-    //     "path": "/icons/skills/postgres.png"
-    //   },
-    //   {
-    //     "type": "MongoDB",
-    //     "path": "/icons/skills/MongoDB.svg"
-    //   }]
-    // },
+   
     {
       "name": "Tools",
       "skills": [  
@@ -185,23 +160,23 @@ export class HomeComponent {
     {
       "num": "1",
       "name": "Portfolio Website",
-      "desc": "Hey you're here right now!!!",
-      "skills": ['Angular', 'SASS', 'Firebase'],
+      "desc": "Hey you're here right now!!! This is my personal portfolio website built using Angular and hosted on Vercel. It showcases my skills, projects, and experience in a clean and modern design.",
+      "skills": ['Typescript', 'Angular', 'Vercel','SASS' ,'CI/CD'],
       "github_link": "https://github.com/Biboy-al/Fredo"
     },
     {
       "num": "2",
       "name": "Fredo",
-      "desc": "This is a keylogger malware written in rust. ",
+      "desc": "This is a keylogger and screenshot capture tool built using Rust, and windows API. It captures keystrokes storing them securely onto a flask server for later retrieval.",
       "skills": ['Rust', 'Python', 'Keylogging', 'Python', 'Flask'],
       "github_link": "https://github.com/Biboy-al/Fredo"
     },
 
     {
       "num": "3",
-      "name": "Malware",
-      "desc": "",
-      "skills": ['Rust', 'Python', 'Keylogging'],
+      "name": "HomeSentinel",
+      "desc": "Developed the backend functionality for a home security system using C# and .NET. Dockerized the application for seamless deployment and hosted it on AWS.",
+      "skills": ['C#', '.NET', 'ASP.NET', 'Docker', 'AWS'],
       "github_link": ""
     }
   ]

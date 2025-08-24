@@ -1,3 +1,16 @@
+@use '../../../variables' as vars;
+
 h2{
     color: white;
+}
+
+
+.back_button{
+    color: vars.$text-green;
+    text-decoration: none;
+}
+
+.back_button:hover{
+    color: vars.$text-dark-green;
+    text-decoration: none;
 }

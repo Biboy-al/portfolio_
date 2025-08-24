@@ -19,6 +19,8 @@
     "@angular/platform-browser": "^20.1.6",
     "@angular/platform-browser-dynamic": "^20.1.6",
     "@angular/router": "^20.1.6",
+    "@vercel/blob": "^1.1.1",
+    "@vercel/sdk": "^1.10.4",
     "marked": "^15.0.12",
     "ngx-markdown": "^20.0.0",
     "rxjs": "~7.8.0",
