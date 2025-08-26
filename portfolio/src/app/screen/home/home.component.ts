@@ -161,7 +161,7 @@ export class HomeComponent {
       "num": "1",
       "name": "Portfolio Website",
       "desc": "Hey you're here right now!!! This is my personal portfolio website built using Angular and hosted on Vercel. It showcases my skills, projects, and experience in a clean and modern design.",
-      "skills": ['Typescript', 'Angular', 'Vercel','SASS' ,'CI/CD'],
+      "skills": ['Typescript', 'Angular', 'Vercel','SASS' ,'CI/CD', 'Github Actions'],
       "github_link": "https://github.com/Biboy-al/Fredo"
     },
     {
@@ -177,7 +177,7 @@ export class HomeComponent {
       "name": "HomeSentinel",
       "desc": "Developed the backend functionality for a home security system using C# and .NET. Dockerized the application for seamless deployment and hosted it on AWS.",
       "skills": ['C#', '.NET', 'ASP.NET', 'Docker', 'AWS'],
-      "github_link": ""
+      "github_link": "https://github.com/Minibunny14/HomeSentinel"
     }
   ]
 }
