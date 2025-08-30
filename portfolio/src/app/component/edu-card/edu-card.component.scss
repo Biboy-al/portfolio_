@@ -6,11 +6,11 @@
     border-radius: 8px;
     margin-bottom: 1rem;
     border: 1px solid rgba(139, 92, 246, 0.2);
+    gap: 0.5rem;
 }
 
-
 .card:hover {
-    border-color:vars.$main-purple; /* purple-ish border on hover */
+    border-color: vars.$outline-purple; /* purple-ish border on hover */
     box-shadow: 0 0 5px 2px #a78bfa; /* subtle glow */
   }
 
@@ -27,28 +27,22 @@
     }
 }
 
-.card-skills{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 0.5rem;
-}
 
-.job-misc {
+.edu-misc {
     text-align: right;
 
     @media screen and (max-width: 768px) {
         text-align: left;
-
         
     }
   }
 
-h2{
+
+  h2{
     color: vars.$main-purple;
 }
 
-.job-misc{
+.edu-misc{
     color: vars.$font-gray;
     font-size: 0.9rem;
 }
@@ -57,11 +51,10 @@ h2{
     color: vars.$text-green
 }
 
-li::marker {
-    color: vars.$main-purple
-  }
-
 .subtitle{
     color: vars.$text-green;
 }
 
+li::marker {
+    color: vars.$main-purple
+  }

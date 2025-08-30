@@ -6,10 +6,11 @@ import { TerminalContainerComponent } from '../../component/terminal-container/t
 import {MatButtonModule} from '@angular/material/button';
 import { ContactCardComponent } from "../../component/contact-card/contact-card.component";
 import { ExperinceCardComponent } from "../../component/experince-card/experince-card.component";
+import { EduCardComponent } from "../../component/edu-card/edu-card.component";
 
 @Component({
   selector: 'app-home',
-  imports: [AboutMeComponent, SkillsContainerComponent, ProjectContainerComponent, SkillsContainerComponent, TerminalContainerComponent, MatButtonModule, ContactCardComponent, ExperinceCardComponent],
+  imports: [AboutMeComponent, SkillsContainerComponent, ProjectContainerComponent, SkillsContainerComponent, TerminalContainerComponent, MatButtonModule, ContactCardComponent, ExperinceCardComponent, EduCardComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
