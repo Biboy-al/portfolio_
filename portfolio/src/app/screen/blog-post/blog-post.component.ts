@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import {MatIconModule} from '@angular/material/icon';
 import { MarkdownModule } from 'ngx-markdown';
-import { TerminalContainerComponent } from "../../terminal-container/terminal-container.component";
+import { TerminalContainerComponent } from "../../component/terminal-container/terminal-container.component";
 import { RouterLink, RouterOutlet } from '@angular/router';
 
 @Component({

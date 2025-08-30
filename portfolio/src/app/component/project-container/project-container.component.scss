@@ -37,6 +37,13 @@ h2{
 }
 
 a{
-  color: vars.$font-gray;
+  color: vars.$text-green;
+  text-decoration: none;
+  display: inline; /* Ensure it's inline */
+  width: auto; 
+}
+
+a:hover{
+  color: vars.$text-dark-green;
   text-decoration: none;
 }

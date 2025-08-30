@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { AboutMeComponent } from '../../component/about-me/about-me.component';
 import { SkillsContainerComponent } from '../../component/skills-container/skills-container.component';
 import { ProjectContainerComponent } from '../../component/project-container/project-container.component';
-import { TerminalContainerComponent } from '../../terminal-container/terminal-container.component';
+import { TerminalContainerComponent } from '../../component/terminal-container/terminal-container.component';
 import {MatButtonModule} from '@angular/material/button';
 import { ContactCardComponent } from "../../component/contact-card/contact-card.component";
 
