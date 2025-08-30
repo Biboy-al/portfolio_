@@ -1,4 +1,4 @@
-@use '../../variables' as vars;
+@use '../../../variables' as vars;
 
 .terminal-container {
     // background-color: #0f111a;
@@ -76,3 +76,16 @@
     color: vars.$main-blue;
   }
 
+
+.prompt{
+  display: flex;
+}
+
+.cmd-line{
+  display: flex;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    
+  }
+}

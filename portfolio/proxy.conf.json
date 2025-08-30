@@ -1,0 +1,14 @@
+{
+    "/api/*": {
+      "target": "https://app-silent-fog-40200111.dpl.myneon.app",
+      "secure": true,
+      "changeOrigin": true,
+      "logLevel": "debug",
+      "pathRewrite": {
+        "^/api": ""
+      },
+      "headers": {
+        "apikey": "ssk_8wv4k2hk7rmzwc04h2a2w79jtqah6h195sk07xwc3mdsr"
+      }
+    }
+  }

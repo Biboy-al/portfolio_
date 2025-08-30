@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { AboutMeComponent } from '../../component/about-me/about-me.component';
 import { SkillsContainerComponent } from '../../component/skills-container/skills-container.component';
 import { ProjectContainerComponent } from '../../component/project-container/project-container.component';
-import { TerminalContainerComponent } from '../../terminal-container/terminal-container.component';
+import { TerminalContainerComponent } from '../../component/terminal-container/terminal-container.component';
 import {MatButtonModule} from '@angular/material/button';
 import { ContactCardComponent } from "../../component/contact-card/contact-card.component";
 
@@ -160,14 +160,14 @@ export class HomeComponent {
     {
       "num": "1",
       "name": "Portfolio Website",
-      "desc": "Hey you're here right now!!! This is my personal portfolio website built using Angular and hosted on Vercel. It showcases my skills, projects, and experience in a clean and modern design.",
+      "desc": "Hey you're here right now!!! This is my personal portfolio website to showcases my skills, projects, thoughts and experinces. I built this using Angular and hosted it on Vercel. I've also used this as a way to learn more about CI/CD by implementing Github Actions for automated deployments.",
       "skills": ['Typescript', 'Angular', 'Vercel','SASS' ,'CI/CD', 'Github Actions'],
-      "github_link": "https://github.com/Biboy-al/Fredo"
+      "github_link": "https://github.com/Biboy-al/portfolio_"
     },
     {
       "num": "2",
       "name": "Fredo",
-      "desc": "This is a keylogger and screenshot capture tool built using Rust, and windows API. It captures keystrokes storing them securely onto a flask server for later retrieval.",
+      "desc": "For the longest time I wanted to learn rust. What better way to learn it than to build a keylogger. Fredo is a windows keylogger built using Rust. It captures keystrokes and sends them to a Flask web server for easy monitoring.",
       "skills": ['Rust', 'Python', 'Keylogging', 'Python', 'Flask'],
       "github_link": "https://github.com/Biboy-al/Fredo"
     },
@@ -175,8 +175,8 @@ export class HomeComponent {
     {
       "num": "3",
       "name": "HomeSentinel",
-      "desc": "Developed the backend functionality for a home security system using C# and .NET. Dockerized the application for seamless deployment and hosted it on AWS.",
-      "skills": ['C#', '.NET', 'ASP.NET', 'Docker', 'AWS'],
+      "desc": "Developed the backend functionality for a home security system using C# and .NET. Dockerized the application for seamless deployment and hosted it on GCP.",
+      "skills": ['C#', '.NET', 'ASP.NET', 'Docker', 'GCP'],
       "github_link": "https://github.com/Minibunny14/HomeSentinel"
     }
   ]

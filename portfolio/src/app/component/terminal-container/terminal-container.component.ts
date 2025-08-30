@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { TerminalButtonsComponent } from '../component/terminal-buttons/terminal-buttons.component';
+import { TerminalButtonsComponent } from '../terminal-buttons/terminal-buttons.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @Component({

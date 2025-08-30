@@ -11,5 +11,5 @@ import {MatButtonModule} from '@angular/material/button';
 })
 export class BlogCardComponent {
 
-  @Input() blog: { name: string, desc: string, path: string } = { name: '', desc: '', path: ''};
+  @Input() blog: {name: string, desc: string, path: string, date: string} = { name: '', desc: '', path: '', date: ''};
 }
