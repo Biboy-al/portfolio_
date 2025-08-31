@@ -1,6 +1,9 @@
 @use '../../../variables' as vars;
 
 .card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     border: 1px solid rgba(139, 92, 246, 0.2);
     padding: 1rem;
     border-radius: 8px;

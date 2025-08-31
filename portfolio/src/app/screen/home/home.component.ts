@@ -79,7 +79,7 @@ export class HomeComponent {
           "path": "/icons/skills/next.webp"
         },
         {
-          "type": "tailwind",
+          "type": "Tailwind",
           "path": "/icons/skills/tailwind.svg"
         },
         {
@@ -99,10 +99,10 @@ export class HomeComponent {
           "type": "Node.js",
           "path": "/icons/skills/jsIconGreen.svg"
         },
-        {
-          "type": "Flask",
-          "path": "/icons/skills/python.png"
-        },
+        // {
+        //   "type": "Flask",
+        //   "path": "/icons/skills/python.png"
+        // },
         {
           "type": "ASP.NET",
           "path": "/icons/skills/NET.svg"
@@ -149,7 +149,7 @@ export class HomeComponent {
         "path": "/icons/skills/pyTorch.png"
       },
       {
-        "type": "scikit-learn",
+        "type": "Scikit-learn",
         "path": "/icons/skills/sci.png"
       },
     
@@ -169,7 +169,7 @@ export class HomeComponent {
     {
       "num": "2",
       "name": "Fredo",
-      "desc": "For the longest time I wanted to learn rust. What better way to learn it than to build a keylogger. Fredo is a windows keylogger built using Rust. It captures keystrokes and sends them to a Flask web server for easy monitoring.",
+      "desc": "I’ve always wanted to learn Rust, and what better way than by building something hands-on? Meet Fredo, a Windows keylogger written in Rust. It captures keystrokes and sends them to a Flask web server, making monitoring simple and straightforward.",
       "skills": ['Rust', 'Python', 'Keylogging', 'Python', 'Flask'],
       "github_link": "https://github.com/Biboy-al/Fredo"
     },

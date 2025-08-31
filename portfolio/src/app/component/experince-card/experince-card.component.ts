@@ -9,5 +9,5 @@ import { SkillChipComponent } from '../skill-chip/skill-chip.component';
 })
 export class ExperinceCardComponent {
 
-  skills = ["Typescript", "Javascript", "C", "C++", "C#", "Java", "Python", "Rust", "Ruby"]
+  skills = ["Typescript", "Next.js", "Python", "TensorFlow", "scikit-learn", "Tailwind CSS", "Git", "Supabase"];
 }
