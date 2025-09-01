@@ -31,9 +31,9 @@ export class BlogsComponent {
     }
   ];
 
-  private dbService = inject(DbService);
+//   private dbService = inject(DbService);
 
- async ngOnInit() {
-    await this.dbService.fetchBlogMetaData();
-  }
+//  async ngOnInit() {
+//     await this.dbService.fetchBlogMetaData();
+//   }
 }
