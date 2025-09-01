@@ -1,0 +1,47 @@
+<div class="card">
+    <div class="card-header">
+        <div class="job-desc">
+            <h2>Full Stack Developer</h2>
+            <h3>Rintr</h3>
+        </div>
+        
+        <div class="job-misc">
+            <div class="date">
+                <p>March 2025 - Present</p>
+            </div>
+            
+            <p>Wellington, NZ</p>
+        </div>
+
+    </div>
+
+    <div class="card-body">
+
+        I work at Rintr as a full-stack developer, focusing primarily on frontend development with Next.js and Tailwind. Additionally, I lead the development of AI features, leveraging Python, scikit-learn, and TensorFlow.
+    </div>
+
+    <div >
+        <div class="subtitle">
+            <p>//Technologies</p>
+        </div>
+        
+        <div class="card-skills">
+            @for(skill of skills; track skill){
+                <app-skill-chip [skill]="skill"></app-skill-chip>
+            }
+        </div>
+
+    </div>
+
+    <div class="card-key">
+        <div class="subtitle">
+            <p>//Key Achievements</p>
+        </div>
+        <ul>
+            <li>Collaborated with the team to develop the landlord listing page using Next.js and Tailwind CSS.</li>
+            <li>Implemented a KNN-based recommendation system to accurately predict rental listings.</li>
+            <li>Worked from an existing database schema to implement and populate a Supabase database for storing rental listings.</li>
+        </ul>
+    </div>
+
+</div>

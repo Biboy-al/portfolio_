@@ -1,0 +1,63 @@
+@use '../../../variables' as vars;
+
+.card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(139, 92, 246, 0.2);
+    gap: 0.5rem;
+}
+
+.card:hover {
+    border-color: vars.$outline-purple; /* purple-ish border on hover */
+    box-shadow: 0 0 5px 2px #a78bfa; /* subtle glow */
+  }
+
+.card-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    @media screen and (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+        
+    }
+}
+
+
+.edu-misc {
+    text-align: right;
+
+    @media screen and (max-width: 768px) {
+        text-align: left;
+        
+    }
+  }
+
+
+  h2{
+    color: vars.$main-purple;
+}
+
+.edu-misc{
+    color: vars.$font-gray;
+    font-size: 0.9rem;
+}
+
+.date{
+    color: vars.$text-green
+}
+
+.subtitle{
+    color: vars.$text-green;
+}
+
+li::marker {
+    color: vars.$main-purple
+  }
